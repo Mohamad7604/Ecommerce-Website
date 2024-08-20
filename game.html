@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         .choices{
+            display:flex;
+            flex-direction: row;
+            gap: 15px;
+         }
+        button {
+            font-size: 20px;
+            margin: 10px;
+            background-color:green ;
+            border-radius: 30px;
+            color:white
+        }
+       #result {
+           color: gold;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div id="choices">
+        <button onclick="play('rock')">🪨rock</button>
+        <button onclick="play('paper')">📰paper</button>
+        <button onclick="play('scissors')">✂️scissors</button>
+    </div>
+    <h2>Results</h2>
+    <h3>Score:</h3>
+    <p>User: <span id="userScore">0</span></p>
+    <p>AI: <span id="aiScore">0</span></p>  
+    <p>Draw: <span id="draws">0</span></p>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
